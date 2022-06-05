@@ -186,8 +186,10 @@ $$ 1/(2*n) \sum_{i=1}^{n} (y_(pred)-y)^2$$
         'knn__k': [2, 5, 7, 10]  
     }
 
-grid_cv = GridSearchCV(pipe, parameters_grid)
-grid_cv.fit(X_train, y_train)
+        grid_cv = GridSearchCV(pipe, parameters_grid)
+        grid_cv.fit(X_train, y_train)
+        
+Получаем k = 7.
 
 Оценки точности модели:
 
